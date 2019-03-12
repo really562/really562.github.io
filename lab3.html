@@ -1,18 +1,11 @@
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Лабораторная работа 3 &#10084;</title>
-	</head>
-	<body>
-		<center><h1>Лабораторная работа 3</h1></center>
-		<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <style>
 canvas {
     border:1px solid #d3d3d3;
-    background-color: #f1f1f1;
+    background-color: #c99999;
 }
 </style>
 </head>
@@ -23,7 +16,7 @@ var myObstacles = [];
 var myScore;
 function startGame() {
     myGamePiece = new component(30, 30, "red", 10, 120);
-    myGamePiece.gravity = 0.05;
+    myGamePiece.gravity = 0.35;
     myScore = new component("30px", "Consolas", "black", 280, 40, "text");
     myGameArea.start();
 }
@@ -130,39 +123,33 @@ function accelerate(n) {
 }
 </script>
 <br>
-<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
-<p>Use the ACCELERATE button to stay in the air</p>
-<p>How long can you stay alive?</p>
+<button onmousedown="accelerate(-0.1)"
+        onmouseup="accelerate(0.025)"
+        style="vertical-align: middle"
+        align="center"
+>GONNA GET UP !!!</button>
+<p>Press the button<br/>
+    @<br/>
+Get the mark!</p>
+    
+   <h3> 1. Прикладная задача и основные требования к личной SPA</h3>
+
+<ul>
+    <li>постоянная смена препятствий для прохождения;</li>
+    <li>кнопки для управления;</li>
+    <li>иконка набора очков для понимания своего успеха в игре.</li>
+</ul>
+    
+    <h3>2. Пользовательская история</h3>
+
+<ul>
+    <li>как пользователю, мне нужно простое приложение для развлечения;</li>
+    <li>как пользователь, я хочу интуитивно понятный интерфейс;</li>
+    <li>как пользователь я хочу видеть свой прогресс в игре.</li>
+</ul>
+    
+    <h3>UML</h3>
+   <img src="https://raw.githubusercontent.com/aandreevstankin/a_andreev.github.io/master/UML_3.png">
+    
 </body>
 </html>
-
-		
-		
-		
-		<head>
-		          <table>
-              <tr><td style="text-align: center;"><canvas id="canvas_tt5c7cfcad30f64" width="175" height="175"></canvas></td></tr>
-              <tr><td style="text-align: center; font-weight: bold"><a href="//24timezones.com/ru_vremia/moscow_mestnoe_vremia.php" style="text-decoration: none" class="clock24" id="tz24-1551695021-c1166-eyJzaXplIjoiMTc1IiwiYmdjb2xvciI6IjAwOTlGRiIsImxhbmciOiJydSIsInR5cGUiOiJhIiwiY2FudmFzX2lkIjoiY2FudmFzX3R0NWM3Y2ZjYWQzMGY2NCJ9" title="Москва мировое время" target="_blank" rel="nofollow">Текущее время в Москве</a></td></tr>
-          </table>
-<script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
-		</head>
-		
-		
-		
-		<head>
-		<script type="text/javascript">
-  function digitalWatch() {
-    var date = new Date();
-    var hours = date.getHours();
-    var minutes = date.getMinutes();
-    var seconds = date.getSeconds();
-    if (hours < 10) hours = "0" + hours;
-    if (minutes < 10) minutes = "0" + minutes;
-    if (seconds < 10) seconds = "0" + seconds;
-    document.getElementById("digital_watch").innerHTML = hours + ":" + minutes + ":" + seconds;
-    setTimeout("digitalWatch()", 1000);
-  }
-</script>
-	</head>
-
-		 <img src="картинка.png"/>
