@@ -1,0 +1,22 @@
+@startuml
+class Property {
+   id : number
+   Name : string
+   Country : string
+   City : string
+   Address : string
+   Cost : number
+}
+class Country {
+   id : number
+   name : string
+}
+class City {
+   id : number
+   name : string
+   countryID: number
+}
+
+Property *-- Country
+Country *-- City
+@enduml
