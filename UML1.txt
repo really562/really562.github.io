@@ -1,0 +1,20 @@
+@startuml
+skinparam class {
+	BackgroundColor White
+	ArrowColor Black
+	BorderColor Black
+}
+class ФильтрацияРезультатов
+class Пользователь
+class ПоискПоАдресу
+class ПросмотрСписка
+
+Пользователь <|-- ПоискПоАдресу
+Пользователь <|-- ПросмотрСписка
+Пользователь <|-- ФильтрацияРезультатов
+
+
+hide members
+hide circle
+hide methods
+@enduml
