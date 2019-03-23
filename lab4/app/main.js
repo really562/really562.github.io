@@ -1,1 +1,2 @@
-main.js
+ng.platformBrowserDynamic.platformBrowserDynamic()
+    .bootstrapModule(AppModule);
