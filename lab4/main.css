@@ -1,0 +1,45 @@
+body {
+    background: url("https://c.wallhere.com/photos/bd/1c/trees_top_view_forest-1264329.jpg!d");
+    color: #dbdbdb;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+p span {
+    background-color: #696969;
+    display: inline-block;
+    padding: 6px 15px;
+    font-weight: bold;
+}
+
+a {
+    color: #dbdbdb;
+    font-size: 1.7rem;
+}
+
+table {
+    background-color: #696969;
+}
+
+#home {
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    height: 100px;
+    width: 100px;
+    background: slategray;
+    display: flex;
+    border-radius: 111px;
+    text-decoration: none;
+    box-shadow: 0 0 100px black;
+}
+
+#home div{
+    text-align: center;
+    margin: auto;
+    font-size: 1rem;
+}
